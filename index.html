@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Srivastava</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/crawl.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+    <div class="stars" aria-hidden="true"></div>
+
+    <p class="intro">A long time ago in a galaxy far,<br />far away....</p>
+
+    <section class="board" aria-label="Opening crawl">
+        <div class="crawl">
+            <div class="title">
+                <h1>Episode I</h1>
+                <h2>Aman Srivastava</h2>
+            </div>
+            <p>It is a period of curiosity and creation. A lone developer, armed with nothing but a keyboard and an endless supply of caffeine, ventures across the digital galaxy in search of interesting problems to solve.</p>
+            <p>From the quiet outer rim of side projects to the bustling core worlds of production systems, they have built tools, shipped features, and learned the ancient ways of clean code and thoughtful design.</p>
+            <p>Now, having established a new outpost on the web, they invite travelers from every corner of the galaxy to explore their work, read their thoughts, and perhaps begin a conversation that spans the stars....</p>
+        </div>
+    </section>
+
+    <section class="post-crawl" id="skills-section" aria-label="What I work with">
+        <div class="banner">
+            <h2>What I Work With</h2>
+            <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>TypeScript</li>
+                    <li>Go</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                    <li>FastAPI</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Cloud &amp; Infra</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Terraform</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Data &amp; Tools</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>GraphQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="post-crawl" id="projects-section" aria-label="Projects">
+        <div class="banner">
+            <h2>Projects</h2>
+            <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Smart Meeting Summarizer</h3>
+                <span class="tech">React · TypeScript · Tailwind · FastAPI · Whisper · GPT-4 · Docker · PostgreSQL · MinIO · Redis</span>
+                <ul>
+                    <li>Full-stack meeting platform with React/TypeScript + Tailwind frontend and FastAPI backend, integrating OpenAI Whisper for transcription and GPT-4 for summarization.</li>
+                    <li>Containerized backend with Docker Compose, PostgreSQL, MinIO audio storage, and Redis async processing across 8 REST endpoints.</li>
+                    <li>Action-item tracking with assignees, due dates, and status, plus CSV and email export.</li>
+                </ul>
+            </article>
+            <article class="project-card">
+                <h3>Autonomous AI Assistant</h3>
+                <span class="tech">LangChain · OpenAI · PyMuPDF · Chroma · Pydantic · arXiv API</span>
+                <ul>
+                    <li>Autonomous research agent built on LangChain + OpenAI that decomposes queries and emits structured JSON reports, cutting research time ~60%.</li>
+                    <li>RAG pipeline with PDF ingestion (PyMuPDF), semantic chunking, and a Chroma vector DB using OpenAI embeddings for sub-second retrieval.</li>
+                    <li>arXiv API integration with end-to-end citation tracking and Pydantic validation for hallucination-resistant outputs.</li>
+                </ul>
+            </article>
+            <article class="project-card">
+                <h3>Formula 1 Podium Predictor</h3>
+                <span class="tech">Python · Pandas · Random Forest · KNN · Fast-F1 API · D3.js</span>
+                <ul>
+                    <li>ML pipeline predicting F1 podiums using Random Forest and KNN models (R² &gt; 0.7, 80% season accuracy) trained on Fast-F1 telemetry.</li>
+                    <li>Interactive D3.js frontend visualizing predicted vs. actual podium counts with season filtering, backed by a Python/Pandas data pipeline.</li>
+                    <li>Engineered features from driver consistency, team performance, and historical podium rates with cross-validation and hyperparameter tuning.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="post-crawl" id="experience-section" aria-label="Experience">
+        <div class="banner">
+            <h2>Experience</h2>
+            <span class="rule" aria-hidden="true"></span>
+        </div>
+        <ol class="timeline">
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-date">May 2026 — Aug 2026</div>
+                <h3>IBM</h3>
+                <div class="timeline-role">Z Infrastructure Solutions Intern · Incoming</div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-date">Jun 2025 — Aug 2025</div>
+                <h3>Fintech Global Center</h3>
+                <div class="timeline-role">Software Engineering Intern</div>
+                <ul>
+                    <li>Engineered a Python bond portfolio optimizer using SciPy Differential Evolution, maximizing yield under budget, duration/DV01, and credit rating constraints.</li>
+                    <li>Designed a penalty-based objective function with feasible seeding, boosting convergence stability and ensuring regulatory-compliant asset weights.</li>
+                    <li>Drove a 40% increase in efficiency for audit reports on portfolio metrics through robust automations.</li>
+                </ul>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-date">Jun 2024 — Aug 2024</div>
+                <h3>Fintech Global Center</h3>
+                <div class="timeline-role">Software Engineering Intern</div>
+                <ul>
+                    <li>Reduced pricing error by 15% against benchmark models by developing a Python yield simulator.</li>
+                    <li>Researched TensorFlow models leveraging RSI, Moving Averages, and Elliott Wave indicators to identify market reversal patterns for strategy backtesting.</li>
+                    <li>Built a NumPy/Matplotlib preprocessing and visualization pipeline enabling analysts to compare predictive vs. actual yield curves interactively.</li>
+                </ul>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-date">Jun 2022 — Aug 2022</div>
+                <h3>ManTech</h3>
+                <div class="timeline-role">Software Engineering Intern</div>
+                <ul>
+                    <li>Developed a PowerApps audit platform integrated with SharePoint and Power Automate, automating security survey collection across 100+ clients.</li>
+                    <li>Consolidated cybersecurity assessment data into dashboards highlighting key vulnerabilities, cutting manual review time by 50%.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="post-crawl" id="contact-section" aria-label="Contact">
+        <div class="banner">
+            <h2>Contact Me</h2>
+            <span class="rule" aria-hidden="true"></span>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="label">Email</span>
+                <a href="mailto:amansrivastava13572@gmail.com">amansrivastava13572@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <span class="label">Phone</span>
+                <a href="tel:+17328647494">(732) 864-7494</a>
+            </div>
+            <div class="contact-card">
+                <span class="label">GitHub</span>
+                <a href="https://github.com/asrivas21" target="_blank" rel="noopener">github.com/asrivas21</a>
+            </div>
+            <div class="contact-card">
+                <span class="label">Location</span>
+                <span class="value">Monmouth Junction, NJ</span>
+            </div>
+        </div>
+    </section>
+
+    <p class="hint">scroll to begin</p>
+
+    <!-- Invisible spacer that provides scroll length -->
+    <div class="spacer" aria-hidden="true"></div>
+
+    <script src="js/scroll.js"></script>
+</body>
+</html>
