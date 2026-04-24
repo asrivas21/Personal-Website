@@ -1,194 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman Srivastava</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/crawl.css" />
-    <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/timeline.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+  <meta charset="utf-8">
+  <title>Signal & Noise</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="stars" aria-hidden="true"></div>
+  <section class="landing">
+    <div class="stage">
+    <h1 class="ml5">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters letters-left">Aman</span>
+        <!--<span class="letters ampersand">&amp;</span> -->
+        <span class="letters letters-right">Srivastava</span>
+        <span class="line line2"></span>
+      </span>
+    </h1>
 
-    <p class="intro">A long time ago in a galaxy far,<br />far away....</p>
+    <div class="skills-marquee" aria-label="Skills">
+      <div class="skills-track">
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">C</span>
+        <span class="skill">Rust</span>
+        <span class="skill">OCaml</span>
+        <span class="skill">SQL</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">x86 Assembly</span>
+        <span class="skill">FastAPI</span>
+        <span class="skill">React</span>
+        <span class="skill">Docker</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Redis</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Git</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">D3.js</span>
+        <span class="skill">Jupyter</span>
+        <span class="skill">Data Structures &amp; Algorithms</span>
+        <span class="skill">API Design &amp; Integration</span>
+        <span class="skill">Full-stack</span>
+        <span class="skill">GenAI &amp; LLM Integration</span>
+        <!-- duplicated for seamless loop -->
+        <span class="skill" aria-hidden="true">Java</span>
+        <span class="skill" aria-hidden="true">Python</span>
+        <span class="skill" aria-hidden="true">C</span>
+        <span class="skill" aria-hidden="true">Rust</span>
+        <span class="skill" aria-hidden="true">OCaml</span>
+        <span class="skill" aria-hidden="true">SQL</span>
+        <span class="skill" aria-hidden="true">JavaScript</span>
+        <span class="skill" aria-hidden="true">TypeScript</span>
+        <span class="skill" aria-hidden="true">HTML/CSS</span>
+        <span class="skill" aria-hidden="true">x86 Assembly</span>
+        <span class="skill" aria-hidden="true">FastAPI</span>
+        <span class="skill" aria-hidden="true">React</span>
+        <span class="skill" aria-hidden="true">Docker</span>
+        <span class="skill" aria-hidden="true">PostgreSQL</span>
+        <span class="skill" aria-hidden="true">Redis</span>
+        <span class="skill" aria-hidden="true">Node.js</span>
+        <span class="skill" aria-hidden="true">Git</span>
+        <span class="skill" aria-hidden="true">Pandas</span>
+        <span class="skill" aria-hidden="true">D3.js</span>
+        <span class="skill" aria-hidden="true">Jupyter</span>
+        <span class="skill" aria-hidden="true">Data Structures &amp; Algorithms</span>
+        <span class="skill" aria-hidden="true">API Design &amp; Integration</span>
+        <span class="skill" aria-hidden="true">Full-stack</span>
+        <span class="skill" aria-hidden="true">GenAI &amp; LLM Integration</span>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <section class="board" aria-label="Opening crawl">
-        <div class="crawl">
-            <div class="title">
-                <h1>Episode I</h1>
-                <h2>Aman Srivastava</h2>
-            </div>
-            <p>It is a period of curiosity and creation. A lone developer, armed with nothing but a keyboard and an endless supply of caffeine, ventures across the digital galaxy in search of interesting problems to solve.</p>
-            <p>From the quiet outer rim of side projects to the bustling core worlds of production systems, they have built tools, shipped features, and learned the ancient ways of clean code and thoughtful design.</p>
-            <p>Now, having established a new outpost on the web, they invite travelers from every corner of the galaxy to explore their work, read their thoughts, and perhaps begin a conversation that spans the stars....</p>
+  <section class="projects">
+    <h2 class="projects-title">Projects</h2>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <header class="project-header">
+          <span class="traffic-lights" aria-hidden="true">
+            <span class="traffic-light traffic-light-red"></span>
+            <span class="traffic-light traffic-light-yellow"></span>
+            <span class="traffic-light traffic-light-green"></span>
+          </span>
+          <span class="project-tab">smart-meeting-summarizer</span>
+        </header>
+        <div class="project-body">
+          <h3 class="project-name">Smart Meeting Summarizer</h3>
+          <p class="project-summary">A full-stack meeting platform built with a React, TypeScript, and Tailwind frontend on top of a FastAPI backend. Audio is transcribed end-to-end through OpenAI Whisper and summarized with GPT-4, producing clean meeting notes and highlights.</p>
+          <p class="project-summary">The backend is containerized with Docker Compose and backed by PostgreSQL for structured data, MinIO for raw audio storage, and Redis for async processing across eight REST API endpoints. Users can track action items with assignees, due dates, and status, and export them directly to CSV or email.</p>
         </div>
-    </section>
+      </article>
 
-    <section class="post-crawl" id="skills-section" aria-label="What I work with">
-        <div class="banner">
-            <h2>What I Work With</h2>
-            <span class="rule" aria-hidden="true"></span>
+      <article class="project-card">
+        <header class="project-header">
+          <span class="traffic-lights" aria-hidden="true">
+            <span class="traffic-light traffic-light-red"></span>
+            <span class="traffic-light traffic-light-yellow"></span>
+            <span class="traffic-light traffic-light-green"></span>
+          </span>
+          <span class="project-tab">autonomous-ai-assistant</span>
+        </header>
+        <div class="project-body">
+          <h3 class="project-name">Autonomous AI Assistant</h3>
+          <p class="project-summary">An autonomous research agent built on LangChain and the OpenAI API. It decomposes open-ended queries into structured sub-tasks and emits JSON reports, cutting manual research time by roughly 60% on the tasks I benchmarked it against.</p>
+          <p class="project-summary">Under the hood it runs a RAG pipeline with PDF ingestion via PyMuPDF, semantic chunking, and a Chroma vector database using OpenAI embeddings for sub-second similarity retrieval. The arXiv API is wired in for academic paper ingestion, with end-to-end citation tracking and Pydantic schema validation to keep outputs structured and hallucination-resistant.</p>
         </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>TypeScript</li>
-                    <li>Go</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Frameworks</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Next.js</li>
-                    <li>Node.js</li>
-                    <li>FastAPI</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Cloud &amp; Infra</h3>
-                <ul>
-                    <li>AWS</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Terraform</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Data &amp; Tools</h3>
-                <ul>
-                    <li>PostgreSQL</li>
-                    <li>Redis</li>
-                    <li>GraphQL</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+      </article>
 
-    <section class="post-crawl" id="projects-section" aria-label="Projects">
-        <div class="banner">
-            <h2>Projects</h2>
-            <span class="rule" aria-hidden="true"></span>
+      <article class="project-card">
+        <header class="project-header">
+          <span class="traffic-lights" aria-hidden="true">
+            <span class="traffic-light traffic-light-red"></span>
+            <span class="traffic-light traffic-light-yellow"></span>
+            <span class="traffic-light traffic-light-green"></span>
+          </span>
+          <span class="project-tab">f1-podium-predictor</span>
+        </header>
+        <div class="project-body">
+          <h3 class="project-name">F1 Podium Predictor</h3>
+          <p class="project-summary">An end-to-end machine learning pipeline that predicts Formula 1 podium finishes using Random Forest and KNN models trained on telemetry from the Fast-F1 API. The models hit an R² above 0.7 and about 80% season accuracy on held-out seasons.</p>
+          <p class="project-summary">Features are engineered from driver consistency, team performance, and historical podium rates, with cross-validation and hyperparameter tuning behind the scenes. An interactive D3.js frontend visualizes predicted versus actual podium counts with season filtering, all served by a Python and Pandas data pipeline.</p>
         </div>
-        <div class="projects-grid">
-            <article class="project-card">
-                <h3>Smart Meeting Summarizer</h3>
-                <span class="tech">React · TypeScript · Tailwind · FastAPI · Whisper · GPT-4 · Docker · PostgreSQL · MinIO · Redis</span>
-                <ul>
-                    <li>Full-stack meeting platform with React/TypeScript + Tailwind frontend and FastAPI backend, integrating OpenAI Whisper for transcription and GPT-4 for summarization.</li>
-                    <li>Containerized backend with Docker Compose, PostgreSQL, MinIO audio storage, and Redis async processing across 8 REST endpoints.</li>
-                    <li>Action-item tracking with assignees, due dates, and status, plus CSV and email export.</li>
-                </ul>
-            </article>
-            <article class="project-card">
-                <h3>Autonomous AI Assistant</h3>
-                <span class="tech">LangChain · OpenAI · PyMuPDF · Chroma · Pydantic · arXiv API</span>
-                <ul>
-                    <li>Autonomous research agent built on LangChain + OpenAI that decomposes queries and emits structured JSON reports, cutting research time ~60%.</li>
-                    <li>RAG pipeline with PDF ingestion (PyMuPDF), semantic chunking, and a Chroma vector DB using OpenAI embeddings for sub-second retrieval.</li>
-                    <li>arXiv API integration with end-to-end citation tracking and Pydantic validation for hallucination-resistant outputs.</li>
-                </ul>
-            </article>
-            <article class="project-card">
-                <h3>Formula 1 Podium Predictor</h3>
-                <span class="tech">Python · Pandas · Random Forest · KNN · Fast-F1 API · D3.js</span>
-                <ul>
-                    <li>ML pipeline predicting F1 podiums using Random Forest and KNN models (R² &gt; 0.7, 80% season accuracy) trained on Fast-F1 telemetry.</li>
-                    <li>Interactive D3.js frontend visualizing predicted vs. actual podium counts with season filtering, backed by a Python/Pandas data pipeline.</li>
-                    <li>Engineered features from driver consistency, team performance, and historical podium rates with cross-validation and hyperparameter tuning.</li>
-                </ul>
-            </article>
-        </div>
-    </section>
+      </article>
+    </div>
+  </section>
 
-    <section class="post-crawl" id="experience-section" aria-label="Experience">
-        <div class="banner">
-            <h2>Experience</h2>
-            <span class="rule" aria-hidden="true"></span>
-        </div>
-        <ol class="timeline">
-            <li class="timeline-item">
-                <span class="timeline-marker" aria-hidden="true"></span>
-                <div class="timeline-date">May 2026 — Aug 2026</div>
-                <h3>IBM</h3>
-                <div class="timeline-role">Z Infrastructure Solutions Intern · Incoming</div>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-marker" aria-hidden="true"></span>
-                <div class="timeline-date">Jun 2025 — Aug 2025</div>
-                <h3>Fintech Global Center</h3>
-                <div class="timeline-role">Software Engineering Intern</div>
-                <ul>
-                    <li>Engineered a Python bond portfolio optimizer using SciPy Differential Evolution, maximizing yield under budget, duration/DV01, and credit rating constraints.</li>
-                    <li>Designed a penalty-based objective function with feasible seeding, boosting convergence stability and ensuring regulatory-compliant asset weights.</li>
-                    <li>Drove a 40% increase in efficiency for audit reports on portfolio metrics through robust automations.</li>
-                </ul>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-marker" aria-hidden="true"></span>
-                <div class="timeline-date">Jun 2024 — Aug 2024</div>
-                <h3>Fintech Global Center</h3>
-                <div class="timeline-role">Software Engineering Intern</div>
-                <ul>
-                    <li>Reduced pricing error by 15% against benchmark models by developing a Python yield simulator.</li>
-                    <li>Researched TensorFlow models leveraging RSI, Moving Averages, and Elliott Wave indicators to identify market reversal patterns for strategy backtesting.</li>
-                    <li>Built a NumPy/Matplotlib preprocessing and visualization pipeline enabling analysts to compare predictive vs. actual yield curves interactively.</li>
-                </ul>
-            </li>
-            <li class="timeline-item">
-                <span class="timeline-marker" aria-hidden="true"></span>
-                <div class="timeline-date">Jun 2022 — Aug 2022</div>
-                <h3>ManTech</h3>
-                <div class="timeline-role">Software Engineering Intern</div>
-                <ul>
-                    <li>Developed a PowerApps audit platform integrated with SharePoint and Power Automate, automating security survey collection across 100+ clients.</li>
-                    <li>Consolidated cybersecurity assessment data into dashboards highlighting key vulnerabilities, cutting manual review time by 50%.</li>
-                </ul>
-            </li>
-        </ol>
-    </section>
+  <section class="timeline">
+    <h2 class="timeline-title">Career Timeline</h2>
 
-    <section class="post-crawl" id="contact-section" aria-label="Contact">
-        <div class="banner">
-            <h2>Contact Me</h2>
-            <span class="rule" aria-hidden="true"></span>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <span class="label">Email</span>
-                <a href="mailto:amansrivastava13572@gmail.com">amansrivastava13572@gmail.com</a>
-            </div>
-            <div class="contact-card">
-                <span class="label">Phone</span>
-                <a href="tel:+17328647494">(732) 864-7494</a>
-            </div>
-            <div class="contact-card">
-                <span class="label">GitHub</span>
-                <a href="https://github.com/asrivas21" target="_blank" rel="noopener">github.com/asrivas21</a>
-            </div>
-            <div class="contact-card">
-                <span class="label">Location</span>
-                <span class="value">Monmouth Junction, NJ</span>
-            </div>
-        </div>
-    </section>
+    <svg class="timeline-svg" viewBox="0 0 1000 900" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Career progression timeline">
+      <path class="timeline-path"
+            d="M 60 100 L 840 100 C 1000 100, 1000 400, 840 400 L 160 400 C 0 400, 0 700, 160 700 L 940 700" />
 
-    <p class="hint">scroll to begin</p>
+      <g class="timeline-event">
+        <circle cx="150" cy="100" r="12" />
+        <text x="150" y="140" text-anchor="middle" class="event-date">Summer 2026</text>
+        <text x="150" y="165" text-anchor="middle" class="event-title">Z Infra Solutions Intern</text>
+        <text x="150" y="187" text-anchor="middle" class="event-company">IBM</text>
+      </g>
 
-    <!-- Invisible spacer that provides scroll length -->
-    <div class="spacer" aria-hidden="true"></div>
+      <g class="timeline-event">
+        <circle cx="750" cy="100" r="12" />
+        <text x="750" y="140" text-anchor="middle" class="event-date">Summer 2025</text>
+        <text x="750" y="165" text-anchor="middle" class="event-title">SWE Intern</text>
+        <text x="750" y="187" text-anchor="middle" class="event-company">Fintech Global Center</text>
+      </g>
 
-    <script src="js/scroll.js"></script>
+      <g class="timeline-event">
+        <circle cx="700" cy="400" r="12" />
+        <text x="700" y="440" text-anchor="middle" class="event-date">Summer 2024</text>
+        <text x="700" y="465" text-anchor="middle" class="event-title">SWE Intern</text>
+        <text x="700" y="487" text-anchor="middle" class="event-company">Fintech Global Center</text>
+      </g>
+
+      <g class="timeline-event">
+        <circle cx="300" cy="400" r="12" />
+        <text x="300" y="440" text-anchor="middle" class="event-date">Aug 2023</text>
+        <text x="300" y="465" text-anchor="middle" class="event-title">BS Computer Science</text>
+        <text x="300" y="487" text-anchor="middle" class="event-company">University of Maryland</text>
+      </g>
+
+      <g class="timeline-event">
+        <circle cx="900" cy="700" r="12" />
+        <text x="900" y="740" text-anchor="middle" class="event-date">Summer 2022</text>
+        <text x="900" y="765" text-anchor="middle" class="event-title">SWE Intern</text>
+        <text x="900" y="787" text-anchor="middle" class="event-company">ManTech</text>
+      </g>
+    </svg>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
