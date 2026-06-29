@@ -59,8 +59,7 @@ export default function Home() {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="mt-6 text-lg text-[#6B6B6B] max-w-lg leading-relaxed font-sans"
         >
-          I build systems — RAG pipelines, financial data infrastructure, media bias detection.
-          Rising senior at UMD. Currently at IBM.
+          Rising senior at UMD. Currently at IBM. Scroll down to learn more about me and what I build!
         </motion.p>
 
         <motion.div

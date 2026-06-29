@@ -6,14 +6,14 @@ export interface NowItem {
 export const NOW_ITEMS: NowItem[] = [
   {
     label: 'building',
-    value: 'Deploying BiasLens — short-form video bias detection',
+    value: 'SLT - a platform for traders and investors to monitor their portfolio',
   },
   {
-    label: 'at',
-    value: 'IBM LinuxONE, NYC — RAG platform for enterprise clients',
+    label: 'currently at',
+    value: 'IBM producing a RAG platform for enterprise clients',
   },
   {
     label: 'trading',
-    value: 'Watching rate cut expectations and semis positioning',
+    value: 'NQ1 e-mini futures',
   },
 ];
